@@ -6,7 +6,7 @@ const app = express();
 const server = require('http').Server(app);
 const io = require('socket.io')(server);
 
-mongoose.connect("mongodb://goweek:nnrmieao1@ds155243.mlab.com:55243/goweek-js", {
+mongoose.connect("mongodb://{user}:{password}@ds155243.mlab.com:55243/goweek-js", {
     useNewUrlParser: true
 });
 
